@@ -1,0 +1,54 @@
+{% extends "layout.twig" %}
+{% block class %}bk-pt-default{% endblock %}
+{% block content %}
+
+    <!-- Header -->
+    <div class="hero-header">
+
+        <div class="flex-container">
+            <div class="flex-item flex-nav">
+                {{widget('extendednavigation', 'navigation', {"align":"center"})|raw}}
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="page-title">
+        {{widget('pagetitle', 'page-title', {})|raw}}
+    </div>
+
+<!-- Container -->
+<div class="container">
+
+    <!-- Page Content -->
+    <section class="template-content">
+
+        <!-- Main Widget Zone -->
+        {{zone('main')|raw}}
+
+    </section>
+    <!-- End Page Content -->
+
+</div>
+<!-- End Container -->
+
+<!-- Footer -->
+<div class="template-footer">
+
+    <!-- Footer Container -->
+    <div class="flex-container">
+
+        <!-- Page Content -->
+        <div class="flex-item flex-profile1">
+            {{widget('profile', 'address', { 'profileType':'address', 'address':'profile'})|raw}}
+        </div>
+        <div class="flex-item flex-profile2">
+            {{widget('profile', 'socialicons', { 'profileType':'email', 'socialicons':'email'})|raw}}
+        </div>
+
+    </div>
+    <!-- End Container -->
+</div>
+
+{% endblock %}
