@@ -406,24 +406,6 @@
         min-height: auto;
         position: relative;
     }
-
-    .hero-logo {
-        position: absolute;
-        top: 40%;
-        @media only screen and (max-width : 1024px) {
-            top: 30%;
-            bottom: inherit;
-        }
-        @media only screen and (max-width : 600px) {
-            position: relative;
-        }
-    }
-    .company-link {
-        color: @color__companyname--text;
-        &:hover {
-            color: @color-swatch3;
-        }
-    }
     .navigation-list--children {
         background-color: transparent;
     }
@@ -438,13 +420,6 @@
     min-height: inherit;
     .flex-container {
         background-color: fade(@color-swatch6, 10%);
-    }
-    .hero-logo {
-        position: relative;
-        padding: 20px;
-        @media @mobile {
-            padding: 5px;
-        }
     }
 }
 
@@ -908,26 +883,13 @@
 }
 
 
-// -------------------
-// Page Title
-// -------------------
+// ----------------------------
+// Company Name in Default Page
+// ----------------------------
 
-.pagetitle {
+.companyname {
     padding: 17px 70px 14px;
     background-color: darken(@color__body--background, 4%);
     border-bottom: 1px solid darken(@color__body--background, 10%);
     text-align: center;
-}
-
-// Page Title Text
-.pagetitle-text {
-    padding-bottom: 0;
-    font-size: @font__h4--font-size;
-    line-height: @font__h4--line-height;
-    text-transform: uppercase;
-
-    @media @mobile {
-        font-size: bkscale(@font__h4--font-size, 0.7);
-        line-height: bkscale(@font__h4--line-height, 0.7);
-    }
 }
