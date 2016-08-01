@@ -2,7 +2,7 @@
     "name": "lorah",
     "widgetVersion":2,
     "thumbnail": "thumbnail.png",
-    "screenshot": "screenshot.jpg",
+    "screenshot": "lorah-screenshot.jpg",
     "templateType":"standard",
     "pageTypes": ["home"],
     "images": [
