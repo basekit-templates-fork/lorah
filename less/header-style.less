@@ -431,12 +431,22 @@
 }
 
 
+
+
 // Feature Arrow
 // ------------------------------
 
+// Arrow only displays if the feature displays
+.feature-arrow {
+    display: none;
+}
+.bk-pt-home [data-widget-type="feature"] ~ .feature-arrow {
+    display: block;
+}
 
 .feature-arrow {
     position: absolute;
+    left: 0;
     bottom:25px;
     z-index: 9999;
     width: 100%;
