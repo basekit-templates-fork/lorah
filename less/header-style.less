@@ -46,7 +46,7 @@
     .align-items(stretch);
     .align-content(stretch);
     @media only screen and (max-width : 1024px) {
-        padding: 0 5%;
+        padding: 0;
         background-color: fade(@color-swatch6, 10%);
         min-height: 51px;
     }
@@ -525,6 +525,12 @@
     @media only screen and (min-width : 1024px) {
         margin: 10px 0;
     }
+}
+
+.extendednavigation {
+   @media only screen and (max-width : 1024px) {
+        padding: 0 5%;
+    } 
 }
 
 // Folder, adds arrow icon
