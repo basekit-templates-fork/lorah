@@ -46,7 +46,7 @@
     .align-items(stretch);
     .align-content(stretch);
     @media only screen and (max-width : 1024px) {
-        padding: 0 5%;
+        padding: 0;
         background-color: fade(@color-swatch6, 10%);
         min-height: 51px;
     }
@@ -527,6 +527,12 @@
     }
 }
 
+.extendednavigation {
+   @media only screen and (max-width : 1024px) {
+        padding: 0 5%;
+    } 
+}
+
 // Folder, adds arrow icon
 .item-name--parent:after {
     display: inline-block;
@@ -907,3 +913,21 @@
     border-bottom: 1px solid darken(@color__body--background, 10%);
     text-align: center;
 }
+
+// ----------------------------
+// Company Name in Home Page
+// ----------------------------
+
+.companyname-home {
+    .companyname {
+        @media only screen and (min-width : 601px) {
+            .company-link {
+                color: #ffffff;
+            }
+            background-color: transparent;
+            border-bottom: none;
+        }
+    }
+}
+
+
