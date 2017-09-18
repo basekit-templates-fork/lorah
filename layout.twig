@@ -38,10 +38,14 @@
     <!-- Nav Menu & Blog Search Script -->
     <script nonce="{{ numberUsedOnce }}">
 
-        // Nav
-        $( ".navigation-toggle" ).click(function() {
-            $( ".bk-extendednavigation" ).toggleClass( "open" ); // Toggles class open to display/hide the whole navigation
-            $( "body" ).toggleClass( "noscroll" ); // Toggles class open to add noscroll to body
+        // Toggles class open to display/hide the whole navigation
+        $(document).on("click", ".navigation-toggle", function() {
+            $( ".bk-extendednavigation" ).toggleClass( "open" );
+        });
+
+        // Toggles class open to display/hide the whole navigation
+        $(document).on("click", ".navigation-toggle", function() {
+            $( "body" ).toggleClass( "noscroll" );
         });
 
         // Blog Search
